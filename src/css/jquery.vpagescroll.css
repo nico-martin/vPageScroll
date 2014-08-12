@@ -1,0 +1,76 @@
+body {margin:0px;padding:0px;min-width:320px;}
+
+.vpagescroll_navigation {
+  position:fixed;
+  top:50%;
+  z-index:10;
+  right:0px;
+}
+
+.vpagescroll_navigation ul {
+  list-style: none;
+  margin:0px 5px;
+}
+
+.vpagescroll_navigation ul li {
+  text-align:right;
+  display:block;
+  margin:5px 0px;
+  position: relative;
+}
+.vpagescroll_navigation ul li a {
+  font-size: 20px;
+  height:60px;
+  color:#D9D9D9;display:inline-block;
+  -webkit-transition: all 0.5s;-moz-transition: all 0.5s;-o-transition: all 0.5s;
+}
+.vpagescroll_navigation ul li a.active i {
+  font-size: 60px;
+  -webkit-transition: all 0.5s;-moz-transition: all 0.5s;-o-transition: all 0.5s;
+}
+.vpagescroll_navigation ul li a:hover {
+  color:#E3E3E3;
+}
+
+.vpagescroll_navigation ul li a i {
+  font-size: 35px;
+  padding:0px 5px;
+  display:inline-block;
+  line-height:40px;
+}
+
+.vpagescroll_navigation ul li span {
+  position:absolute;
+  top:0px;right:60px;
+  display:none;white-space: nowrap;
+  font-size: 20px;
+  line-height:40px;
+  color:#fff;
+  padding:0px 15px;background-color:#000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+#navi_shadow {
+  position:fixed;
+  right:0px;top:50%;
+  margin-top:-320px;
+  width:220px;height:640px;
+  z-index:9;
+  background-image:url('../img/navi_shadow.png');
+}
+
+@media only screen and (max-width: 719px) {
+    .main {padding-top:40px;}
+    #navi_shadow{
+        display:none;
+    }
+
+    .vpagescroll_navigation {top:0px;background-color:#000;left:0px;right:inherit;margin-top:0px !important;width:100%;}
+    .vpagescroll_navigation ul {width:100%;text-align:center;margin:0px;padding:0px;}
+    .vpagescroll_navigation ul li {display:inline-block;}
+    .vpagescroll_navigation ul li a, .vpagescroll_navigation ul li a:hover {color:#fff;font-size: 16px;padding:0px 10px;height:50px; }
+    .vpagescroll_navigation ul li a i {line-height:50px;}
+    .vpagescroll_navigation ul li a.active i {font-size: 35px; }
+    .vpagescroll_navigation ul li span {display:none !important}
+}

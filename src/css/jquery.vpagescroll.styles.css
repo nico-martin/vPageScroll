@@ -1,0 +1,57 @@
+/* ----------------------------------------------------- */
+/* Styleset for http://nicomartin.ch */
+/* Written by Nico Martin - vir2al.ch - 24.07.2014*/
+/* ----------------------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500);
+
+body {margin:0px;padding:0px;font-family: 'Open Sans', sans-serif;background-color:#F4F5F5;font-size:16px;min-width:320px;}
+
+/*font*/
+p, td {line-height:150%;margin:15px 0px;color:#000}
+p.three-cols {-webkit-column-count: 3;-moz-column-count: 3;column-count: 3;text-align: justify;
+column-gap:40px;-moz-column-gap:40px;-webkit-column-gap:40px; /* Safari and Chrome */ }
+
+b {font-weight:600;}
+
+p a {font-style: italic; }
+
+h1 {font-size:50px;margin:20px 0px; text-align:center;}
+h2 {font-size:25px;margin:20px 0px;font-weight:500;}
+h3 {font-size:25px;margin:20px 0px}
+
+a {cursor:pointer;color:#000;text-decoration: none;
+-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;-o-transition: all 0.3s ease;-ms-transition: all 0.3s ease;transition: all 0.3s ease;
+ }
+a:hover {color:#00080A;text-decoration: none;}
+
+a.button {padding:8px 25px;display:inline-block;background-color:#6BA6B3;color:#FFFFFF}
+a.button_small {padding:6px 16px;font-size:14px;}
+a.button:hover {background-color:#006680;}
+a.button.disabled {cursor: default;background-color:#006680;}
+
+h1,h2,h3 {font-family: 'Raleway', sans-serif;font-weight:300;}
+
+pre {
+    height: auto;
+    white-space:nowrap;
+    padding:0px 10px;
+    background-color:#F2F2F2;
+    border:1px #D4D4D4 dashed;
+    line-height:18px;
+    position:relative;
+    margin:0px;
+    font-size:13px;
+    overflow-y:auto;
+}
+
+.showgrid div {background-color:#F2F2F2;}
+.showgrid div p {margin:5px;}
+
+.inner{
+  padding:20px 0px;
+}
+
+
+
