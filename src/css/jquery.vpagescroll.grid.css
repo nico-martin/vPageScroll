@@ -1,0 +1,81 @@
+/* ----------------------------------------------------- */
+/* Responsive Layout by vir2al.ch */
+/* Written by Nico Martin - vir2al.ch - 04.06.2014*/
+/* ----------------------------------------------------- */
+
+table {border-collapse: collapse;border-spacing: 0;}
+img {max-width: 100%;height: auto;}
+.responsive-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+.responsive-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.clear {clear: both;}
+
+/* Grid 1200px */
+.container-12 {margin:0 auto;width: 1200px;-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;-o-transition: all 0.3s ease;-ms-transition: all 0.3s ease;transition: all 0.3s ease; }
+.container-12:after {content:"";display: block;clear: both;visibility: hidden;height: 0;}
+
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
+  display:inline;float: left;margin:10px;
+  -webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;-o-transition: all 0.3s ease;-ms-transition: all 0.3s ease;transition: all 0.3s ease;
+}
+
+.container-12 .grid-1 {width:80px;}
+.container-12 .grid-2 {width:180px;}
+.container-12 .grid-3 {width:280px;}
+.container-12 .grid-4 {width:380px;}
+.container-12 .grid-5 {width:480px;}
+.container-12 .grid-6 {width:580px;}
+.container-12 .grid-7 {width:680px;}
+.container-12 .grid-8 {width:780px;}
+.container-12 .grid-9 {width:880px;}
+.container-12 .grid-10 {width:980px;}
+.container-12 .grid-11 {width:1080px;}
+.container-12 .grid-12 {width:1180px;}
+
+/* Grid 960px */
+
+@media only screen and (min-width: 960px) and (max-width: 1229px) {
+   #wraper {width:940px;}
+  .container-12 {width: 940px;}
+  .container-12 .grid-1 {width:60px;}
+  .container-12 .grid-2 {width:140px;}
+  .container-12 .grid-3 {width:230px;}
+  .container-12 .grid-4 {width:300px;}
+  .container-12 .grid-5 {width:380px;}
+  .container-12 .grid-6 {width:460px;}
+  .container-12 .grid-7 {width:540px;}
+  .container-12 .grid-8 {width:620px;}
+  .container-12 .grid-9 {width:700px;}
+  .container-12 .grid-10 {width:880px;}
+  .container-12 .grid-11 {width:860px;}
+  .container-12 .grid-12 {width:940px;}
+}
+
+/* Grid 720px */
+
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  #wraper {width:700px;}
+  .container-12 {width: 700px;}
+  .container-12 .grid-1 {width:40px;}
+  .container-12 .grid-2 {width:100px;}
+  .container-12 .grid-3 {width:160px;}
+  .container-12 .grid-4 {width:220px;}
+  .container-12 .grid-5 {width:280px;}
+  .container-12 .grid-6 {width:340px;}
+  .container-12 .grid-7 {width:400px;}
+  .container-12 .grid-8 {	width:460px;}
+  .container-12 .grid-9 {width:520px;}
+  .container-12 .grid-10 {width:580px;}
+  .container-12 .grid-11 {width:640px;}
+  .container-12 .grid-12 {width:700px;}
+}
+
+/* Grid Mobile Less Than 719px */
+
+@media only screen and (max-width: 719px) {
+  #wraper {width:90%;}
+  .container-12 {width: 90%;}
+  .container-12 .grid-1, .container-12 .grid-2, .container-12 .grid-3, .container-12 .grid-4, .container-12 .grid-5, .container-12 .grid-6, .container-12 .grid-7, .container-12 .grid-8, .container-12 .grid-9, .container-12 .grid-10, .container-12 .grid-11, .container-12 .grid-12 {
+  	width:100%;margin-left: 0px;margin-right: 0px;
+  }
+
+}
